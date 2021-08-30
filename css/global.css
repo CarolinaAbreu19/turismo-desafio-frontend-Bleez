@@ -1,0 +1,228 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.category__title {
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+/* .card__city, .card__price {
+    color: $secondaryColor;
+} */
+.card__city-description, .card__price-description {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.card__city-country {
+  font-size: 1.7rem;
+}
+
+.card__price-text {
+  font-size: 1.2rem;
+}
+
+#gramado {
+  background-image: url("../img/brazil/brazil-gramado.png");
+}
+
+#maragogi {
+  background-image: url("../img/brazil/brazil-maragogi.png");
+}
+
+#praiaDoForte {
+  background-image: url("../img/brazil/brazil-praia-forte.png");
+}
+
+#rioDeJaneiro {
+  background-image: url("../img/brazil/brazil-rio-janeiro.png");
+}
+
+#salvador {
+  background-image: url("../img/brazil/brazil-salvador.png");
+}
+
+#saoPaulo {
+  background-image: url("../img/brazil/brazil-sao-paulo.png");
+}
+
+#buenosAires {
+  background-image: url("../img/world/world-buenos-aires.png");
+}
+
+#ilhaDasAventuras {
+  background-image: url("../img/world/world-ilha-aventuras.png");
+}
+
+#londres {
+  background-image: url("../img/world/world-londres.png");
+}
+
+#maldivas {
+  background-image: url("../img/world/world-maldivas.png");
+}
+
+#novaYork {
+  background-image: url("../img/world/world-nova-york.png");
+}
+
+#paris {
+  background-image: url("../img/world/world-paris.png");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+body .container {
+  margin: 3.2rem 5rem 5rem;
+}
+
+@media screen and (min-width: 700px) {
+  body .container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  body .container {
+    display: none;
+  }
+}
+
+body .container .category__images {
+  margin-top: 3.525rem;
+}
+
+body .container .category__images .category__images-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .category__images .category__images-row .card {
+  height: 28.6rem;
+  width: 38rem;
+  margin: 0.8rem;
+  position: relative;
+}
+
+body .container .category__images .category__images-row .card .card__city,
+body .container .category__images .category__images-row .card .card__price {
+  position: absolute;
+}
+
+@media screen and (min-width: 1000px) {
+  body .container .category__images .category__images-row .card .card__city,
+  body .container .category__images .category__images-row .card .card__price {
+    bottom: 20px;
+  }
+}
+
+body .container .category__images .category__images-row .card .card__city {
+  left: 13px;
+}
+
+@media screen and (max-width: 999px) {
+  body .container .category__images .category__images-row .card .card__city {
+    bottom: 50px;
+  }
+}
+
+body .container .category__images .category__images-row .card .card__price {
+  right: 13px;
+}
+
+@media screen and (max-width: 999px) {
+  body .container .category__images .category__images-row .card .card__price {
+    bottom: 10px;
+  }
+}
+
+body .card__info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+  color: #FFFFFF;
+}
+
+body .card__info,
+body .card {
+  border-radius: 8px;
+}
+
+body .mobile {
+  padding-top: 3.277rem;
+}
+
+@media screen and (min-width: 700px) {
+  body .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  body .mobile {
+    display: block;
+  }
+}
+
+body .mobile .category__title {
+  text-align: center;
+}
+
+body .mobile .carousel {
+  margin: 3.523rem 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+body .mobile .carousel .carousel__card {
+  margin: 1rem;
+  height: 28.6rem;
+  width: 38rem;
+  position: relative;
+}
+
+body .mobile .carousel .carousel__card .card__city,
+body .mobile .carousel .carousel__card .card__price {
+  position: absolute;
+  bottom: 20px;
+}
+
+body .mobile .carousel .carousel__card .card__city {
+  position: absolute;
+  left: 13px;
+}
+
+body .mobile .carousel .carousel__card .card__price {
+  position: absolute;
+  right: 13px;
+}
+
+body .mobile .carousel > .card {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+/*# sourceMappingURL=global.css.map */

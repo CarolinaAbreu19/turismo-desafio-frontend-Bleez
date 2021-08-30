@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.category__title {
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+/* .card__city, .card__price {
+    color: $secondaryColor;
+} */
+.card__city-description, .card__price-description {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.card__city-country {
+  font-size: 1.7rem;
+}
+
+.card__price-text {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=fonts.css.map */

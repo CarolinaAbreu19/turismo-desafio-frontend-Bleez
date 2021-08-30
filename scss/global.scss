@@ -1,0 +1,140 @@
+@import 'fonts';
+@import 'images';
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $backgroundColor;
+
+    .container {
+        margin: 3.2rem 5rem 5rem;
+
+        @media screen and (min-width: 700px) {
+            display: block;
+        }
+
+        @media screen and (max-width: 699px) {
+            display: none;
+        }
+
+        .category__images {
+            margin-top: 3.525rem;
+
+            .category__images-row {
+                display: flex;
+                align-items: center;
+
+                .card {
+                    height: 28.6rem;
+                    width: 38rem;
+                    margin: 0.8rem;
+
+                    position: relative;
+
+                    .card__city,
+                    .card__price {
+                        position: absolute;
+
+                        @media screen and (min-width: 1000px) {
+                            bottom: 20px;
+                        }
+                    }
+
+                    .card__city {
+                        left: 13px;
+
+                        @media screen and (max-width: 999px) {
+                            bottom: 50px;
+                        }
+                    }
+
+                    .card__price {
+                        right: 13px;
+
+                        @media screen and (max-width: 999px) {
+                            bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .card__info {
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        background-image: linear-gradient(transparent, $glassWhite, $glassBlack);
+        color: $secondaryColor;
+    }
+
+    .card__info,
+    .card {
+        border-radius: 8px;
+    }
+
+    .mobile {
+        padding-top: 3.277rem;
+
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 699px) {
+            display: block;
+        }
+
+        .category__title {
+            text-align: center;
+        }
+
+        .carousel {
+            margin: 3.523rem 0 5rem;
+
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+
+            .carousel__card {
+                margin: 1rem;
+
+                height: 28.6rem;
+                width: 38rem;
+
+                position: relative;
+
+                .card__city,
+                .card__price {
+                    position: absolute;
+                    bottom: 20px;
+                }
+
+                .card__city {
+                    position: absolute;
+                    left: 13px;
+                }
+
+                .card__price {
+                    position: absolute;
+                    right: 13px;
+                }
+
+            }
+
+        }
+
+        .carousel>.card {
+            flex-shrink: 0;
+        }
+    }
+}
